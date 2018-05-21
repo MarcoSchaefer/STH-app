@@ -1,6 +1,11 @@
 import React from "react";
 import { Root } from "native-base";
 import { StackNavigator, DrawerNavigator } from "react-navigation";
+import axios from 'axios';
+
+import * as CONFIG from './config'
+
+axios.defaults.baseURL = CONFIG.SERVER_URL;
 
 import Header from "./screens/Header/";
 import Header1 from "./screens/Header/1";
